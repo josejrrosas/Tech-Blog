@@ -1,0 +1,30 @@
+<div class="text-center">
+  <h2>{{name}}</h2>
+  <p>{{description}}</p>
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  {{#if comments.length}}
+  {{#each comments as |comments|}}
+  <div class="text-center">
+  <h2>Comment</h2>
+  <p>{{comments.content}}</p>
+  <p>Created by {{user.name}} on {{format_date comments.date_created}}</p>
+</div>
+  {{/each}}
+  {{/if}}
+  <div id="start-here">
+
+  </div>
+  {{#if logged_in}}
+  <p>
+    <button class="btn btn-primary" id="comment-btn" data-id = "{{id}}">Comment!</button>
+  </p>
+  {{else}}
+  <a href="/login">Please log in to comment!</a>
+  {{/if}}
+</div>
+
+
+
+
+
+<script src="/js/post.js"></script>
