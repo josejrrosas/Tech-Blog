@@ -7,7 +7,12 @@ require('dotenv').config();
 
 const urlDB='mysql://root:DxVwu35Wm07pxaFpUmqX@containers-us-west-65.railway.app:5985/railway'
 
-let sequelize = new Sequelize(process.env.urlDB);
+// let sequelize = new Sequelize(process.env.urlDB);
+const sequelize = new Sequelize(MYSQLDATABASE, MYSQLUSER, MYSQLPASSWORD, {
+  host: MYSQLHOST,
+  dialect: mysql,
+  operatorsAliases: false,
+})
 
 // let sequelize;
 
