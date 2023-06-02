@@ -13,7 +13,7 @@ This is a tech blog. Create an account. Write and view blogs and comment on them
 * [Questions](#questions)
 
 # Deployed Website: 
-[Workout Tracker](https://afternoon-waters-30602.herokuapp.com/)
+[Tech-Blog](https://tech-blog-josejrrosas.up.railway.app/)
 
 # Screenshot :
 
