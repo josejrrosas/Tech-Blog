@@ -1,10 +1,11 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
+const urlDB=`mysql://root:DxVwu35Wm07pxaFpUmqX@containers-us-west-65.railway.app:5985/railway`
 let sequelize;
 
-if (process.env.JAWSDB_URL) {
-  sequelize = new Sequelize(process.env.JAWSDB_URL);
+if (process.env.urlDB) {
+  sequelize = new Sequelize(process.env.urlDB);
 } else {
   sequelize = new Sequelize(
     process.env.DB_NAME,
