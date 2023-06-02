@@ -9,7 +9,7 @@ const urlDB='mysql://root:DxVwu35Wm07pxaFpUmqX@containers-us-west-65.railway.app
 
 // let sequelize = new Sequelize(process.env.urlDB);
 const sequelize = new Sequelize(urlDB, {
-  dialect: mysql,
+  dialect: 'mysql',
   operatorsAliases: false,
 })
 
