@@ -8,10 +8,9 @@ const urlDB='mysql://root:DxVwu35Wm07pxaFpUmqX@containers-us-west-65.railway.app
 //   operatorsAliases: false,
 // })
 
-// let sequelize;
 
 if (process.env.urlDB) {
-  sequelize = new Sequelize(process.env.urlDB, {
+  sequelize = new Sequelize(urlDB, {
   dialect: 'mysql',
   operatorsAliases: false,
 })
